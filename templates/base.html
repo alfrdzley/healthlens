@@ -7,13 +7,18 @@
     <title>HealthLens</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://kit.fontawesome.com/d92aa40807.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/d92aa40807.js"
+      crossorigin="anonymous"
+    ></script>
     {% tailwind_css %}
   </head>
-  <body class="">
+  <body class="bg-[#ffefef]">
     {% comment %} Hero {% endcomment %}
-    <div class="">
-      <div class="">{% block Navbar %}{% endblock Navbar %}</div>
+    <div class="h-screen w-screen flex flex-col">
+      {% block Navbar %}{% endblock Navbar %}
+
+
     </div>
   </body>
 </html>
