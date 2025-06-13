@@ -1,5 +1,14 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block Navbar %}
     {% include "snippets/Navbar.html" %}
 {% endblock Navbar %}
+
+{% block Hero %}
+    {% include "hero/Hero.html" %}    
+{% endblock Hero %}
+
+{% block Features %}
+    {% include "features/Features.html" %}
+{% endblock Features %}
