@@ -1,14 +1,15 @@
 {% load static %}
-<div class="navbar bg-base-100 flex w-full h-10">
-  <div class="flex-1">
-    <a class="btn btn-ghost text-xl">
-        <img class=""
-         src='{% static "images/logo.png" %}' alt="logo">
-    </a>
+<div class="navbar bg-base-100-200 h-10 justify-between items-center px-4">
+  <div class="mt-2">
+    <img
+      class="w-40 h-40 object-cover"
+      src="{% static 'images/logo.png' %}"
+      alt="Logo"
+    />
   </div>
-  <div class="flex-none">
-    <ul class="menu menu-horizontal px-1">
-      <button class="bg-black text-white px-4 p-1 rounded-2xl tracking-widest">Try it <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
-    </ul>
-  </div>
+  <button
+    class="bg-[#212121] text-white font-semibold px-6 p-1 rounded-2xl tracking-widest hover:bg-black/40 hover:px-7 transition-all duration-300 ease-in-out"
+  >
+    Try it <i class="ml-1 fa-sharp fa-solid fa-arrow-right"></i>
+  </button>
 </div>
