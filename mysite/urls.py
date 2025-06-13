@@ -7,4 +7,5 @@ urlpatterns = [
     path("__reload__/", include("django_browser_reload.urls")),
     path('admin/', admin.site.urls),
     path('',views.index,name="landing_page" ),
+    path('dashboard/', views.rekap, name='rekap')
 ]
