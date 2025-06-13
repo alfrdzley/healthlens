@@ -1,24 +1,26 @@
 {% load static tailwind_tags %}
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>HealthLens</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script
       src="https://kit.fontawesome.com/d92aa40807.js"
       crossorigin="anonymous"
     ></script>
+    <title>HealthLens</title>
     {% tailwind_css %}
-  </head>
-  <body class="bg-[#ffefef]">
-    {% comment %} Hero {% endcomment %}
-    <div class="h-screen w-screen flex flex-col">
+</head>
+<body>
+  {% comment %} Hero {% endcomment %}
+    <div class="w-full flex flex-col overflow-x-hidden">
       {% block Navbar %}{% endblock Navbar %}
-
-
+      {% block Hero %}{% endblock Hero %}
     </div>
-  </body>
+
+    {% comment %} Features {% endcomment %}
+    <div class="w-full h-screen flex flex-col overflow-x-hidden">
+      {% block Features %}{% endblock Features %}
+    </div>
+</body>
 </html>
