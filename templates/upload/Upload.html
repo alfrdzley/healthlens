@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthlens - Upload</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Menambahkan font kustom jika diperlukan */
+        /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'); */
+        body {
+            /* font-family: 'Poppins', sans-serif; */
+        }
+    </style>
+</head>
+<body class="bg-[#F0FFFA] min-h-screen flex items-center justify-center p-4">
+
+<div class="w-full max-w-5xl bg-white shadow-lg rounded-lg">
+    <header class="p-6 border-b border-gray-200">
+        <div class="flex items-center space-x-3">
+            <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+            <h1 class="text-2xl font-bold text-gray-800">HEALTHLENS</h1>
+        </div>
+    </header>
+
+    <nav class="p-6 flex justify-center items-center space-x-12 border-b border-gray-200">
+        <a href="#" class="text-gray-500 font-semibold tracking-widest">REKAPAN</a>
+        <a href="#" class="text-gray-800 font-bold tracking-widest border-b-2 border-blue-500 pb-1">UPLOAD</a>
+        <a href="#" class="text-gray-500 font-semibold tracking-widest">OUTPUT</a>
+    </nav>
+
+    <main class="p-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <div class="flex flex-col items-center">
+                <h2 class="text-lg font-semibold text-gray-500 self-start mb-4">scan</h2>
+                <div class="w-full flex-grow flex flex-col items-center justify-center p-8 border-2 border-dashed border-gray-300 rounded-lg text-center">
+                    <svg class="w-16 h-16 text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M12 15l-3-3m0 0l3-3m-3 3h12"></path>
+                    </svg>
+                    <p class="text-xl font-semibold text-gray-700 mb-2">UPLOAD FILE</p>
+                    <button type="button" class="bg-blue-500 text-white font-bold py-2 px-6 rounded-md hover:bg-blue-600 transition duration-300">
+                        Browse Files
+                    </button>
+                    <p class="text-xs text-gray-400 mt-2">Supported file types: JPG, PNG</p>
+                </div>
+                <button type="submit" class="w-full mt-6 bg-blue-500 text-white font-bold py-3 rounded-md hover:bg-blue-600 transition duration-300">
+                    KIRIM
+                </button>
+            </div>
+
+            <div class="flex flex-col">
+                <h2 class="text-lg font-semibold text-gray-500 mb-4">output</h2>
+                <div class="w-full p-6 border border-gray-200 rounded-lg flex-grow">
+                    <h3 class="font-bold text-gray-800 mb-4">HASIL DARI MAKANAN AYAM:</h3>
+                    <div class="flex items-start space-x-6">
+                        <div class="space-y-3 text-gray-700 flex-shrink-0">
+                            <p><span class="font-semibold">Karbo:</span> 20%</p>
+                            <p><span class="font-semibold">Lemak:</span> 10%</p>
+                            <p><span class="font-semibold">Protein:</span> 20%</p>
+                            <p><span class="font-semibold">Serat:</span> 40%</p>
+                            <p><span class="font-semibold">Kalori:</span> 70%</p>
+                        </div>
+                        <div class="flex-grow flex items-center justify-center">
+                            <img src="https://i.ibb.co/68Rz0J7/fried-chicken.jpg" alt="Hasil Makanan Ayam" class="rounded-lg shadow-md w-full max-w-xs object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
