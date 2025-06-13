@@ -1,19 +1,14 @@
-<div class="navbar bg-base-100">
+{% load static %}
+<div class="navbar bg-base-100 flex w-full h-10">
   <div class="flex-1">
-    <a class="btn btn-ghost text-xl">daisyUI</a>
+    <a class="btn btn-ghost text-xl">
+        <img class=""
+         src='{% static "images/logo.png" %}' alt="logo">
+    </a>
   </div>
   <div class="flex-none">
     <ul class="menu menu-horizontal px-1">
-      <li><a>Link</a></li>
-      <li>
-        <details>
-          <summary>Parent</summary>
-          <ul class="bg-base-100 rounded-t-none p-2">
-            <li><a>Link 1</a></li>
-            <li><a>Link 2</a></li>
-          </ul>
-        </details>
-      </li>
+      <button class="bg-black text-white px-4 p-1 rounded-2xl tracking-widest">Try it <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
     </ul>
   </div>
 </div>
