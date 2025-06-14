@@ -15,33 +15,51 @@
     <img
       src="{% static 'images/3.png' %}"
       alt="HealthLens"
-      class="w-64 h-64 mt-14 rounded-full shadow-lg border-4 border-gray-400 object-cover"
+      class="w-64 h-64 mt-14 rounded-full shadow-lg border-4 border-gray-200 object-cover"
     />
   </div>
 
   <div class="flex gap-3 justify-center items-cente px-4">
+    <style>
+      @keyframes spring {
+        0% {
+          transform: translateY(8px);
+        }
+
+        50% {
+          transform: translateY(0);
+        }
+
+        100% {
+          transform: translateY(8px);
+        }
+      }
+      .animate-spring {
+        animation: spring 1.5s ease-in-out infinite;
+      }
+    </style>
     <img
-      class="w-[210px] h-[290px] rounded-md shadow-md border-2 border-gray-400 object-cover mt-10"
+      class="w-[210px] h-[290px] rounded-md shadow-md border-2 border-gray-400 object-cover mt-10 animate-spring"
       src="{% static 'images/content/heros/karbo.jpg' %}"
       alt="Hero Image"
     />
     <img
-      class="w-[210px] h-[290px] rounded-md shadow-md border-2 border-gray-400 object-cover mt-52"
+      class="w-[210px] h-[290px] rounded-md shadow-md border-2 border-gray-400 object-cover mt-32 animate-spring"
       src="{% static 'images/content/heros/lemak.jpeg' %}"
       alt="Hero Image"
     />
     <img
-      class="w-[210px] h-[290px] rounded-md shadow-md border-2 border-gray-400 object-cover mt-80"
+      class="w-[210px] h-[290px] rounded-md shadow-md border-2 border-gray-400 object-cover mt-52 animate-spring"
       src="{% static 'images/content/heros/makanan_kalori.webp' %}"
       alt="Hero Image"
     />
     <img
-      class="w-[210px] h-[290px] rounded-md shadow-md border-2 border-gray-400 object-cover mt-52"
+      class="w-[210px] h-[290px] rounded-md shadow-md border-2 border-gray-400 object-cover mt-32 animate-spring"
       src="{% static 'images/content/heros/protein.jpeg' %}"
       alt="Hero Image"
     />
     <img
-      class="w-[210px] h-[290px] rounded-md shadow-md border-2 border-gray-400 object-cover mt-10"
+      class="w-[210px] h-[290px] rounded-md shadow-md border-2 border-gray-400 object-cover mt-10 animate-spring"
       src="{% static 'images/content/heros/makanan_serat.webp' %}"
       alt="Hero Image"
     />
