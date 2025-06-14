@@ -869,6 +869,14 @@ select {
   margin-top: 2rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .mt-80 {
   margin-top: 20rem;
 }
@@ -997,6 +1005,8 @@ select {
 
 .items-start {
   align-items: flex-start;
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
@@ -1009,6 +1019,10 @@ select {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .gap-3 {
@@ -1338,6 +1352,11 @@ select {
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity, 1));
 }
 
 .text-gray-700 {
