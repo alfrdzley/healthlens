@@ -38,15 +38,16 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'tailwind',
     'theme',
-    'django_browser_reload'
+    'django_browser_reload',
+    'dashboard',
 ]
 
 TAILWIND_APP_NAME = 'theme'
 
-# NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
+NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
 # NPM_BIN_PATH = 'npm.cmd'
 # NPM_BIN_PATH = "/usr/local/bin/npm"
-NPM_BIN_PATH = "/opt/homebrew/bin/npm"
+# NPM_BIN_PATH = "/opt/homebrew/bin/npm"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
